@@ -1,8 +1,8 @@
 Question 1:  Review the Dockerfile in your repo at docker/Dockerfile and related files in the docker directory.  In particular, review the plugins we have installed into this image.  What plugins / applications do you recognize?  Which ones do you think would be most useful when setting up a CI/CD pipeline?
-Answer:  
+Answer: Recognize subversion, git, handlebars, mailer, gradle, junit, mavin, token management plugins.  Most useful for CI/CD likely junit for testing, multiple plugins with pipeline in the name indicating that these are probably used for pipeline operations/functions.  Plugins to version control and repository (subversion/git) for code would be necessary in CI/CD.  Plugins for package management for building processes in pipeline (Maven)
 
 Question 2:  What do you think are some advantages of running a dockerized Jenkins?  How would it differ to install Jenkins directly on a host?
-Answer:
+Answer: Dockerized Jenkins ensures that there is consistency when running Jenkins.  If multiple instances were installed individually on hosts there is no guarantee that each installation would be the same or have the same plugins/configuration.  Running from docker can guarantee that using the same docker image on different hosts will be the same.  Another advantage is the speed for which a Jenkins environment can be constructed and running.  The docker image allows for speed and accuracy for the Jenkins installation.
 
 Question 3:  Based on the behavior you have seen exploring Jenkins' administrative console and your experience setting up Jenkins on your VM, what are two ways to add a plugin to your Jenkins instance?
-Answer:  
+Answer:  Via the UI or configured during installation.
