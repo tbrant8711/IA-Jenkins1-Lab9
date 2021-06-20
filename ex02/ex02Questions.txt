@@ -1,14 +1,19 @@
 Question 1:  Review the options under Build Triggers.  Why might you want to set up your build to trigger "after other projects are built" or use a GitHub webhook to poll git?
-Answer:  
+Answer:  This build may have dependencies on others so that they would need to be built first. The webhook could poll git and if changes are found a build could be initiated to incorporate the git changes. 
 
 Question 2:  Review the options under Build Environment.  Why might you want to delete the workspace before the build starts?  
-Answer:  
+Answer:  To ensure you are starting with a clean build workspace/environment.  
 
 Question 3:  Where will the script we specified run when the build job is executed?  (Recall that this is a dockerized Jenkins instance)
-Answer:  
+Answer:  Local to the jenkins docker
 
-Question 4:  Paste the revision GUID that your job pulled down as the answer to this question.
-Answer:  
+Question 4:  Paste the revision GUID that your job pulled down as the answer to this questvvvvvvvion.
+Answer:  69a7ea5bf4c2d89b96dbd2e79f52e79564994502
 
 Question 5: Paste the last 4 lines of your successful job's console output as the answer to this question
-Answer:
+Answer: 
+
+[Week9Jenkins1] $ /bin/sh -xe /tmp/jenkins5128680550327949181.sh
++ ./ex02/helloworld.sh
+Hello World
+Finished: SUCCESS
